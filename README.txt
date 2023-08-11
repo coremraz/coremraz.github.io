@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="./CSS/select2.css" />
 <link rel="stylesheet" href="./CSS/style.css" />
-<link rel="stylesheet" href="./node_modules/vanillajs-datepicker/dist/css/datepicker.min.css" />
+<link rel="stylesheet" href="./CSS/datepicker.css" />
 
 2. Подключить скрипты:
 
