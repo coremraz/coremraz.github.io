@@ -1,4 +1,5 @@
 import { getStartDate, getEndDate } from "./date-picker.js";
+
 let direction = "OW"; //переключение режимов OW - one way, RT - return
 const citiesUrl = "https://humoair.avtra.com/ibe/XY/home/init?language=en";
 const airportsUrl = "https://humoair.avtra.com/ibe/XY/destinationAirports/get";

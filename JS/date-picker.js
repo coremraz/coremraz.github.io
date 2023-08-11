@@ -1,4 +1,4 @@
-import Datepicker from '../node_modules/vanillajs-datepicker/js/Datepicker.js';
+import Datepicker from '../JS/Datepicker.js'
 const startDate = document.querySelector('input[name="startDate"]');
 const endDate = document.querySelector('input[name="endDate"]');
 
