@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/select2.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/vanillajs-datepicker/dist/css/datepicker.min.css"
+    />
+
+    <title>flightForm</title>
+  </head>
+  <body>
+    <div class="flight-form-container">
+      <div class="flight-form-card">
+        <section class="flight-mode">
+          <button class="one-way">One Way</button>
+          <button class="return">Return</button>
+        </section>
+        <section class="destination-section">
+          <div class="from-block">
+            <p class="p-header">FROM</p>
+            <select id="destination-from" class="select-input">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="to-block">
+            <p class="p-header">TO</p>
+            <select id="destination-to" class="select-input" name="city">
+              <option value=""></option>
+            </select>
+          </div>
+        </section>
+        <section class="date-section">
+          <div class="date-block">
+            <p class="p-header">Departure</p>
+            <input type="text" name="startDate" class="date" />
+          </div>
+          <div class="date-block">
+            <p class="p-header" id="return-p">Return</p>
+            <input type="text" name="endDate" class="date" id="date-return" />
+          </div>
+        </section>
+        <section class="passengers-section">
+          <div>
+            <p class="p-header">Adults</p>
+            <select
+              id="adults-count"
+              class="select-input"
+              name="city"
+              placeholder="Количество взрослых"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+          <div>
+            <p class="p-header">Children</p>
+            <select
+              id="child-count"
+              class="select-input"
+              name="city"
+              placeholder="Количество детей"
+            >
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+          <div>
+            <p class="p-header">Infants</p>
+            <select
+              id="infants-count"
+              class="select-input"
+              name="city"
+              placeholder="Количество младенцев"
+            >
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+        </section>
+        <form id="card-form" action="" method="post">
+          <input
+            id="card-button"
+            type="submit"
+            value="Search"
+            disabled="disabled"
+          />
+        </form>
+      </div>
+    </div>
+    <script type="module" src="JS/flightForm.js"></script>
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/select2.min.js"></script>
+  </body>
+</html>
